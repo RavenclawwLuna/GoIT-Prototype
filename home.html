@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Water Usage Plan</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0; 
+    }
+
+    .container {
+      width: 80%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 18px; 
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+    }
+
+    .search-icon {
+      margin-right: 10px;
+    }
+
+    .message {
+      background-color: #e6f7ff; 
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 16px; 
+    }
+
+    .message-buttons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .message button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .to-do-list {
+      margin-bottom: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+
+    .to-do-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .to-do-icon {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .rewards {
+      text-align: center;
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+    }
+
+    .rewards img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="search-bar">
+        <i class="search-icon"></i> 
+        <input type="text" placeholder="My Water Usage Plan">
+        <span class="close-icon">X</span>
+      </div>
+    </div>
+
+    <h1>Good Morning!</h1>
+
+    <div class="message">
+      Input yesterday's water consumption!
+    </div>
+
+    <div class="message">
+      You've Moved Up on the Leaderboard!
+      <span class="close-icon">X</span>
+      <div class="message-buttons"> 
+        <button>Later</button> 
+      </div>
+      <button>Check Now!</button>
+    </div>
+
+    <div class="to-do-list">
+      <h3>To Do:</h3>
+      <div class="to-do-item">
+        <i class="to-do-icon"></i> 
+        Input Water Consumption
+      </div>
+      <div class="to-do-item">
+        <i class="to-do-icon"></i> 
+        Check Leaderboard
+      </div>
+      <div class="to-do-item">
+        <i class="to-do-icon"></i> 
+        Claim your Rewards!
+      </div>
+    </div>
+
+    <div class="rewards">
+      <img src="https://cdn-icons-png.flaticon.com/512/8348/8348232.png" alt="Trophy"> 
+      <h3>REWARDS</h3>
+      <p>Check what you can claim!!</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
