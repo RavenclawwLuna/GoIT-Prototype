@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: lightblue;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 5px;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center the content within the container */
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      text-align: left; /* Align labels to the left */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>A Few Questions to Get to Know You</h1> 
+
+    <label for="bathroom_uses">How many times did you use the bathroom yesterday?</label><br>
+    <input type="number" id="bathroom_uses" name="bathroom_uses"><br><br>
+
+    <label for="shower_bath">Did you shower or take a bath? If so, for how long?</label><br>
+    <input type="text" id="shower_bath" name="shower_bath"><br><br>
+
+    <label for="hand_washes">Other than using the bathroom, how many times did you wash your hands?</label><br>
+    <input type="number" id="hand_washes" name="hand_washes"><br><br>
+
+    <label for="laundry">Did you wash your laundry? By hand or by machine?</label><br>
+    <input type="text" id="laundry" name="laundry"><br><br>
+
+    <button type="button" onclick="nextPage()">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
