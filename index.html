@@ -47,7 +47,7 @@
       border: none;
       border-radius: 3px;
       cursor: pointer;
-      margin-right: 10px; 
+      margin-right: 10px;
     }
 
     .buttons {
@@ -75,7 +75,14 @@
     <label for="password-verify">Password Verification:</label>
     <input type="password" id="password-verify" name="password-verify" required>
 
-    <button type="submit">Submit</button>
+    <button type="button" onclick="redirectToQuestions()">Submit</button> 
   </div>
 
+  <script>
+    function redirectToQuestions() {
+      window.location.href = "questions.html"; 
+    }
+  </script>
+
 </body>
+</html>
