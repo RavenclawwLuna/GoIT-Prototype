@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>X Water X</title>
   <style>
     body {
       font-family: sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      background-color: lightblue;
+      height: 100vh;
+      background-color: #f0f0f0; /* Light gray background */
     }
 
     .container {
-      background-color: white;
-      padding: 30px;
-      border-radius: 5px;
-      align-items: center;
+      width: 80%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff; /* White background for content */
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center; 
+      text-align: center;
     }
 
     h1 {
       margin-bottom: 20px;
     }
 
-    label {
-      display: block;
-      margin-bottom: 10px;
-      text-align: left; 
-    }
-
-    input[type="text"],
-    input[type="number"] {
-      width: 100%;
-      padding: 10px;
+    .question {
       margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
     }
 
-    button {
+    .question-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .question-icons img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .age-group {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .age-group button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .next-button {
       background-color: #4CAF50;
       color: white;
       padding: 10px 20px;
       border: none;
-      border-radius: 3px;
+      border-radius: 5px;
       cursor: pointer;
-      margin-right: 10px;
-    }
-
-    .buttons {
-      text-align: center;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>A Few Questions to Get to Know You</h1> 
+    <h1>X Water X</h1>
+    <p>Saving water, for a better future!</p>
 
-    <label for="bathroom_uses">How many times did you use the bathroom yesterday?</label><br>
-    <input type="number" id="bathroom_uses" name="bathroom_uses"><br><br>
+    <div class="question">
+      <h2>1. Gender</h2>
+      <div class="question-icons">
+        <img src="https://img.favpng.com/6/3/10/gender-symbol-male-public-toilet-clip-art-png-favpng-6nKzBiYFUYV1XjD9K0gi6s4Fe.jpg" alt="Male">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/018/888/777/small/standing-up-woman-icon-png.png" alt="Female">
+      </div>
+    </div>
 
-    <label for="shower_bath">Did you shower or take a bath? If so, for how long?</label><br>
-    <input type="text" id="shower_bath" name="shower_bath"><br><br>
+    <div class="question">
+      <h2>2. Age Group</h2>
+      <div class="age-group">
+        <button>10 - 19</button>
+        <button>20 - 30</button>
+        <button>&gt; 31</button>
+      </div>
+    </div>
 
-    <label for="hand_washes">Other than using the bathroom, how many times did you wash your hands?</label><br>
-    <input type="number" id="hand_washes" name="hand_washes"><br><br>
+    <div class="question">
+      <h2>3. How do you prefer to wash your dishes?</h2>
+      <div class="question-icons">
+        <img src="https://thumbs.dreamstime.com/b/open-dishwasher-21952970.jpg" alt="Dishwasher">
+        <img src="https://media.istockphoto.com/id/1393832205/vector/washing-dishes-clip-art.jpg?s=612x612&w=0&k=20&c=_rnW7QUBQMIkPt7CvMpesGjugT-E3uJDr0nvebuRIy0=" alt="Handwash">
+      </div>
+    </div>
 
-    <label for="laundry">Did you wash your laundry? By hand or by machine?</label><br>
-    <input type="text" id="laundry" name="laundry"><br><br>
+    <div class="question">
+      <h2>4. How do you take bath?</h2>
+      <div class="question-icons">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/847/325/small_2x/cute-boy-taking-a-bath-little-child-boy-character-take-a-shower-daily-routine-bathroom-interior-background-cartoon-illustration-vector.jpg" alt="Shower">
+        <img src="https://img.freepik.com/premium-vector/bathtub-clipart-cartoon-style-vector-illustration_761413-8238.jpg?semt=ais_hybrid" alt="Bathtub">
+      </div>
+    </div>
 
     <button><a href="./home.html"style="text-decoration:none;">Submit</a></button>
-  </div>
 
-  <script src="script.js"></script>
+  </div>
 
 </body>
 </html>
